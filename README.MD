@@ -1,7 +1,3 @@
-Sure, here's how you can include a repository link in your README file:
-
----
-
 # ts-remove-unused-imports
 
 A TypeScript utility to remove unused imports from `.ts` and `.tsx` files in your project.
