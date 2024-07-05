@@ -1,0 +1,10 @@
+# Exclude development and test files
+*.spec.ts
+*.test.ts
+*.spec.tsx
+*.test.tsx
+
+
+global.css
+
+*.map
