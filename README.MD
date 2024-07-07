@@ -1,7 +1,3 @@
-Sure, here's how you can include a repository link in your README file:
-
----
-
 # ts-remove-unused-imports
 
 A TypeScript utility to remove unused imports from `.ts` and `.tsx` files in your project.
@@ -16,19 +12,11 @@ npm install --save-dev ts-remove-unused-imports
 
 ## Usage
 
-### Command-Line Usage
-
-You can run `ts-remove-unused-imports` from the command line with a directory argument:
-
-```bash
-ts-remove-unused-imports path/to/your/directory
-```
-
-Replace `path/to/your/directory` with the path to the directory where you want to remove unused imports.
+You can use `ts-remove-unused-imports` by specifying a directory path where you want to remove unused imports. This utility uses TypeScript and `ts-morph` under the hood to parse and manipulate TypeScript source files.
 
 ### Adding to package.json
 
-You can also add `ts-remove-unused-imports` as an npm script in your `package.json`:
+You can add `ts-remove-unused-imports` as an npm script in your `package.json`:
 
 ```json
 {
@@ -42,9 +30,7 @@ Replace `path/to/your/directory` with the directory path where you want to remov
 
 ### How It Works
 
-`ts-remove-unused-imports` uses TypeScript and `ts-morph` under the hood to parse and manipulate TypeScript source files. Here’s how it works:
-
-1. **Initialization**: It initializes a TypeScript Project using `ts-morph` with your `tsconfig.json` settings.
+1. **Initialization**: `ts-remove-unused-imports` initializes a TypeScript Project using `ts-morph` with your `tsconfig.json` settings.
 
 2. **File Processing**: It traverses through `.ts` and `.tsx` files in the specified directory and its subdirectories.
 
@@ -57,13 +43,13 @@ Replace `path/to/your/directory` with the directory path where you want to remov
 
 ### Example
 
-Here’s an example of using `ts-remove-unused-imports` in a TypeScript project:
+You can run `ts-remove-unused-imports` without installing it globally using `npx`:
 
 ```bash
-ts-remove-unused-imports src
+npx ts-remove-unused-imports path/to/your/directory
 ```
 
-This command will remove unused imports in the `src` directory and its subdirectories.
+This command will remove unused imports in the `path/to/your/directory` and its subdirectories.
 
 ## Contributing
 
@@ -75,4 +61,4 @@ This project is licensed under the ISC License - see the [LICENSE](LICENSE) file
 
 ## Repository
 
-Find this project on [GitHub](https://github.com/your-username/ts-remove-unused-imports).
+Find this project on [GitHub](https://github.com/zemmelmootez/ts-remove-unused-imports).

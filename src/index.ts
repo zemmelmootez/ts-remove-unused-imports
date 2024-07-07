@@ -1,7 +1,7 @@
 import { Project, SourceFile, ts } from "ts-morph";
 import * as path from "path";
 
-function removeUnusedImports(directory: string) {
+export function removeUnusedImports(directory: string) {
   try {
     const project = new Project({
       tsConfigFilePath: "tsconfig.json",
