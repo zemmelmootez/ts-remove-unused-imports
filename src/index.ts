@@ -8,7 +8,7 @@ export function removeUnusedImports(directory: string) {
     });
 
     const files = project.addSourceFilesAtPaths(
-      path.join(directory, "**/*.{ts,tsx}")
+      path.join(directory, "**/*.{ts,tsx,mts}")
     );
 
     files.forEach((file) => {
